@@ -23,10 +23,10 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         @if(!Auth::check())
-        <li><a href="{{ URL::route('register') }}">Register</a></li>
-        <li><a href="{{ URL::route('login') }}">Login</a></li>
+        <li><a href="{{ URL::route('register') }}">Register here</a></li>
+        <li><a href="{{ URL::route('login') }}">Login there</a></li>
         @else
-        <li><a href="{{ URL::route('getlogout') }}">Logout</a></li>
+        <li><a href="{{ URL::route('getlogout') }}">Logout not fair</a></li>
         @endif
       </ul>
     </div>
