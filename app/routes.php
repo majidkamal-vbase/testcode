@@ -33,9 +33,3 @@ Route::group(array('before' => 'guest'),function(){
 	});
 	
 });
-
-
-Route::group(array('before' => 'auth'), function()
-{
- Route::get('/user/logout', array('uses' => 'UserController@UserLogout', 'as' => 'getlogout')); 
-});
