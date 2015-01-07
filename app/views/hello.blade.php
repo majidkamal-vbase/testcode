@@ -3,7 +3,7 @@
 
 @section('head')
 	@parent
-    <title>Test Project</title>
+    <title>Test Project hello worlddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd ddddddddddddddddddd dddddddddddddddddddd</title>
 @stop
 
 
