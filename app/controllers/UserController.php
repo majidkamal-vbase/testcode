@@ -19,9 +19,9 @@ class UserController extends BaseController {
 		$validation = Validator::make(Input::all(),array(
 			'email' => 'required|unique:users|email',
 			'name' => 'required',
-			'username' => 'required|unique:users',
-			'pass1' => 'required|',
-			'pass2' => 'required|same:pass1'
+			'username1' => 'required|unique:users',
+			'pass11' => 'required|',
+			'pass21' => 'required|same:pass1'
 		));
 		
 		if($validation->fails())
@@ -66,17 +66,6 @@ class UserController extends BaseController {
 				'username' => Input::get('username'),
 				'password' => Input::get('pass1')
 			));
-			/*$remember = (Input::has('remember')) ? true : false;
-   			$auth = Auth::attempt(array(
-   				'username' => Input::get('username'),
-   				'password' => Input::get('pass1')
-   			), $remember);*/
-			
-			//echo Input::get('username');
-			//echo Input::get('pass1');
-			
-			//print_r($auth);
-			//exit;
 			
 			if($auth)
 			{
