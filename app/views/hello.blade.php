@@ -3,7 +3,7 @@
 
 @section('head')
 	@parent
-    <title>Test Project</title>
+    <title>Test Project khkjhskjfhkjfhksjfh jsghfjksghfkjsgfkjh </title>
 @stop
 
 
